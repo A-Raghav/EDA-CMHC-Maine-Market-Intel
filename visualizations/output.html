@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1aeaa05b240fbbf2a3fcc831e8859a09 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1aeaa05b240fbbf2a3fcc831e8859a09" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1aeaa05b240fbbf2a3fcc831e8859a09 = L.map(
+                "map_1aeaa05b240fbbf2a3fcc831e8859a09",
+                {
+                    center: [44.08, -70.17],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    tooltip: "This tooltip will appear on hover",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8e48290451673ab3e1206846b4a4a814 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1aeaa05b240fbbf2a3fcc831e8859a09);
+        
+    
+            var heat_map_08fbe931be26f6b8d128c2db04fc4689 = L.heatLayer(
+                [[44.08, -70.11, 20], [43.08, -70.7, 10], [44.8, -71.17, 85]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_1aeaa05b240fbbf2a3fcc831e8859a09);
+        
+    
+            var marker_b277c1914a9b16d85060e12b4543d478 = L.marker(
+                [44.08, -70.11],
+                {}
+            ).addTo(map_1aeaa05b240fbbf2a3fcc831e8859a09);
+        
+    
+        var popup_fdfdf6532f19c3e9bfaca930ef81ce30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4778a42a40772b8e408e877da7e13662 = $(`<div id="html_4778a42a40772b8e408e877da7e13662" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>`)[0];
+                popup_fdfdf6532f19c3e9bfaca930ef81ce30.setContent(html_4778a42a40772b8e408e877da7e13662);
+            
+        
+
+        marker_b277c1914a9b16d85060e12b4543d478.bindPopup(popup_fdfdf6532f19c3e9bfaca930ef81ce30)
+        ;
+
+        
+    
+</script>
+</html>
